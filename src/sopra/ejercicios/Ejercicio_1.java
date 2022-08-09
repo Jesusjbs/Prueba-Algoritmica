@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio_1 {
 
 	public static void leerNumero() {
-		System.out.print("Introduzca un número entero: ");
+		System.out.print("Introduzca un nÃºmero entero: ");
 		int numero = 0;
 		Scanner entrada = new Scanner(System.in);
 
@@ -15,13 +15,13 @@ public class Ejercicio_1 {
 			if (numero < 0)
 				throw new Exception();
 
-			System.out.println((numero % 2 == 0) ? "El número introducido es par." : "El número introducido es impar.");
+			System.out.println((numero % 2 == 0) ? "El nÃºmero introducido es par." : "El nÃºmero introducido es impar.");
 
 			for (int i = numero; i >= 0; i -= 2) {
 				System.out.print(i + " ");
 			}
 		} catch (Exception e) {
-			System.out.println("Debe introducir un número entero mayor o igual a cero.");
+			System.out.println("Debe introducir un nÃºmero entero mayor o igual a cero.");
 			leerNumero();
 		}
 	}

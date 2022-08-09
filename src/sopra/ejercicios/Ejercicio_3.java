@@ -7,8 +7,8 @@ public class Ejercicio_3 {
 	public static void obtenerSalario() {
 		int horasTrabajadas = leerHorasTrabajadas();
 		Double tarifa = leerTarifa();
-		System.out.println((horasTrabajadas > 40) ? String.format("El sueldo recibido es %s€", 
-				(40*tarifa)+((horasTrabajadas-40)*tarifa*1.5)) : String.format("El sueldo recibido es %s€", 
+		System.out.println((horasTrabajadas > 40) ? String.format("El sueldo recibido es %s euros", 
+				(40*tarifa)+((horasTrabajadas-40)*tarifa*1.5)) : String.format("El sueldo recibido es %s euros", 
 						horasTrabajadas*tarifa));
 	}
 	
@@ -19,7 +19,7 @@ public class Ejercicio_3 {
 		try {
 			return entradaHoras.nextInt();
 		}catch(Exception e) {
-			System.out.println("Debe introducir un número entero mayor o igual a cero.");
+			System.out.println("Debe introducir un nÃºmero entero mayor o igual a cero.");
 			return leerHorasTrabajadas();
 		}
 	}
@@ -30,7 +30,7 @@ public class Ejercicio_3 {
 		try {
 			return entradaTarifa.nextDouble();
 		}catch(Exception e) {
-			System.out.println("Debe introducir un número, si es decimal con coma, mayor o igual a cero.");
+			System.out.println("Debe introducir un nÃºmero, si es decimal con coma, mayor o igual a cero.");
 			return leerTarifa();
 		}
 	}
